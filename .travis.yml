@@ -8,5 +8,5 @@ before_install:
         - pip install codecov
 
 scrip:
-        - coverage run --source=com/kuma/ -m unittest discover;coverage report -m
+        - coverage run --source=com/calixto/ -m unittest discover;coverage report -m
         - python -m unittest discover
