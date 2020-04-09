@@ -1,0 +1,10 @@
+language: python
+python:
+    -3.7
+before_install:
+    - python --verion
+    - pip install -U pip
+    - pip install codecov
+script:
+    - coverage run --source=com/calixto/ -m unittest discovery;coverage report -m
+    - python -m unittest discover
